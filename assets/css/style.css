@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-default .navbar-brand {
-	color: white;
+	color: #1abc9c;
 }
 
 .navbar-default {
@@ -87,13 +87,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: white;
+	color: #1abc9c;
 	background-color: transparent;
-	border-bottom: 2px solid white;
+	border-bottom: 2px solid #1abc9c
 }
 
 .navbar-default .navbar-nav > li > a {
-	color: white;
+	color: #1abc9c;
 }
 
 /* ==========================================================================
@@ -147,7 +147,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #social i:hover {
-	color: white;
+	color: #1abc9c
 }
 
 #footerwrap {
@@ -220,11 +220,3 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-/* Gallery */
-.gallery {
-	margin-top: 30px;
-}
-
-.gallery img:hover {
-	opacity: 0.4;
-}
