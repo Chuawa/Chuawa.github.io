@@ -228,3 +228,17 @@ h1, h2, h3, h4, h5, h6 {
   width: 425px;
   margin: 0px 10px;
 }
+
+.workImages img{
+    margin-left: auto; 
+    margin-right: auto; 
+    
+}
+
+.workImages p{
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
