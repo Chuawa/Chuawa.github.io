@@ -1,0 +1,396 @@
+/* --- Global Styles --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fff;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* --- Header --- */
+.site-header {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo img {
+  max-height: 50px;
+}
+
+/* Navigation styles */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Hamburger button styling */
+.nav-toggle {
+  display: none;  /* Hidden by default on larger screens */
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  /* Display the hamburger toggle button on mobile */
+  .nav-toggle {
+    display: block;
+  }
+  
+  /* Hide the navigation menu by default on mobile */
+  .main-nav {
+    display: none;
+    width: 100%;
+  }
+  
+  /* When toggled, display the menu as a vertical list */
+  .main-nav.show-menu {
+    display: block;
+  }
+  
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .main-nav ul li {
+    margin: 10px 0;
+  }
+}
+
+/* --- Hero Section --- */
+.hero {
+  position: relative;
+  height: 80vh;
+  background: url('assets/the-residences-at-w-singapore-sentosa-cove.jpg') center center/cover no-repeat;
+}
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-content {
+  text-align: center;
+  color: #fff;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.cta-btn {
+  background: #182f57;
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+/* Base styling for the submit button */
+button.cta-btn {
+  background-color: #2A3135;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  padding: 11px;
+  width: auto;
+  white-space: normal;
+  cursor: pointer;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+/* Styling for when the button is disabled */
+button.cta-btn:disabled {
+  background-color: #ccc;  /* Grey background */
+  color: #666;             /* Lighter grey text */
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+
+
+
+/* --- Section Titles --- */
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #182f57;
+}
+
+/* --- About, Features, Gallery, & Location Sections --- */
+.section {
+  padding: 60px 0;
+}
+.about-section p,
+.location-section p,
+.features-section p {
+  font-size: 1.1rem;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+.features-list {
+  list-style: disc inside;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: auto;
+}
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.gallery-grid img {
+  width: calc(33.333% - 10px);
+  border-radius: 5px;
+}
+
+/* --- Unit Types & Pricing Section --- */
+.unit-types-section {
+  background: #f9f9f9;
+  color: #182f57;
+}
+.unit-type-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.unit-type-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.main-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.main-heading-overview {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+.faq-main {
+  max-width: 800px;
+  margin: auto;
+}
+.faqq-question {
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.faqq-question:hover {
+  background: rgba(24,47,87,0.05);
+}
+.faqq-question h5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+}
+.faqq-question h5 i {
+  margin-right: 10px;
+}
+.faqq-question .answerr {
+  padding-top: 10px;
+  font-size: 0.95rem;
+  display: none;
+}
+
+/* --- Contact Section --- */
+.contact-section form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact-section label {
+  font-weight: 600;
+  color: #182f57;
+}
+.contact-section input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.contact-section button.cta-btn {
+  border: none;
+  cursor: pointer;
+}
+
+/* --- Map Container --- */
+.map-container {
+  margin-top: 30px;
+  text-align: center;
+}
+.map-container iframe {
+  width: 100%;
+  max-width: 600px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* --- Footer --- */
+.site-footer {
+  background: #182f57;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+/* --- Utility Spacing Classes (for p-3, p-md-5, mt-2, mt-4) --- */
+.p-3 { padding: 1rem; }
+@media (min-width: 768px) {
+  .p-md-5 { padding: 3rem; }
+}
+.mt-2 { margin-top: 0.5rem; }
+.mt-4 { margin-top: 1.5rem; }
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+  .gallery-grid {
+    flex-direction: column;
+  }
+  .gallery-grid img {
+    width: 100%;
+  }
+  .main-nav ul {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+/* Styling for the phone input with non-editable prefix */
+.phone-input {
+  display: flex;
+  align-items: center;
+}
+
+.phone-prefix {
+  background: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 14px 18px;
+  border-radius: 4px 0 0 4px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.phone-input input {
+  border-radius: 0 4px 4px 0;
+  border: 1px solid #ccc;
+  padding: 14px 18px;
+  font-size: 1rem;
+  flex: 1;
+  margin: 0;
+}
+
+/* Optional styling for the terms and conditions checkbox */
+.terms-and-conditions input[type="checkbox"] {
+  transform: scale(1.2);
+  margin-right: 8px;
+}
+
+/* Container for the Amenities Section */
+.amenities-section {
+  padding: 60px 0;
+  background: #f9f9f9;
+}
+
+/* Section Title */
+.amenities-section .section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #182f57;
+}
+
+/* Grid layout for the boxes */
+.amenities-grid {
+  display: grid;
+  grid-gap: 20px;
+  /* Adjust the minmax value as needed to control box sizing */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-top: 30px;
+}
+
+/* Individual amenity box styling */
+.amenity-box {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Heading for each box */
+.amenity-box h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #182f57;
+  border-bottom: 2px solid #182f57;
+  padding-bottom: 5px;
+}
+
+/* Bulleted list inside each box */
+.amenity-box ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.amenity-box ul li {
+  margin-bottom: 5px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+
+
