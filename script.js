@@ -37,7 +37,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
 
   // URLs
   const scriptURL = 'https://script.google.com/macros/s/AKfycbzE4Bd6cQ-NjBROwZQmnc2dSK94vpXVfjkqr2Hgp8BDH6Z_1RHPcxphcpTnocRd0kG4/exec';
-  const webhookURL = 'https://apibg.in/webhook/whatsapp-workflow/111110.96089.146847.1740984971';
+  const webhookURL = 'https://apibg.in/webhook/whatsapp-workflow/111110.96089.146847.1740985373';
 
   // Prepare form data
   const formData = new FormData();
